@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: []
 })
 export class HeaderComponent {
+
+  recipePageStatus: boolean = false;
+  shoppingListStatus: boolean = false;
+
+  @Output() currentPage : EventEmitter<string> = new EventEmitter();
+
+  showPage(pageSelected: string) {
+    this.currentPage.emit(pageSelected);
+  }
 
 }

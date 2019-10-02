@@ -4,12 +4,12 @@
       <a href="#" class="navbar-brand">Recipe Book</a>
     </div>
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">      
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
+          <a class="nav-link" href="#" (click)="showPage('recipes')" >Recipes </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shopping List</a>
+          <a class="nav-link" href="#" (click)="showPage('shopping')">Shopping List</a>
         </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
@@ -17,7 +17,7 @@
           <a href="#" class="nav-link dropdown-toggle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Save Data</a></li>
-            <li><a class="dropdown-item" href="#">Fetch  Data</a></li>
+            <li><a class="dropdown-item" href="#">Fetch Data</a></li>
           </ul>
         </li>
       </ul>
