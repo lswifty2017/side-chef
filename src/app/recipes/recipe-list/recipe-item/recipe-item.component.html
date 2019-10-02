@@ -1,4 +1,4 @@
-<a href="#" class="list-group-item d-flex justify-content-between  list-group-item-action" *ngIf="recipe">
+<a href="#" class="list-group-item d-flex justify-content-between  list-group-item-action" *ngIf="recipe" (click)="emitRecipe()">
   <div class="col-9">
       <h5 class="mb-1">{{ recipe.name }}</h5>
       <p class="mb-1">{{ recipe.description }}</p>
