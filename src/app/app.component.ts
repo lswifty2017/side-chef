@@ -12,6 +12,5 @@ export class AppComponent {
 
   changePage(page) {
     this.currentPage = page;
-    debugger
   }
 }

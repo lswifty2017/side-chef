@@ -1,1 +1,7 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item d-flex justify-content-between  list-group-item-action" *ngIf="recipe">
+  <div class="col-9">
+      <h5 class="mb-1">{{ recipe.name }}</h5>
+      <p class="mb-1">{{ recipe.description }}</p>
+  </div>
+  <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-responsive rounded float-right" style="max-height: 50px; max-width: 70px;">
+</a>
