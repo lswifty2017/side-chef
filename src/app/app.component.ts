@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedFeature = 'recipe';
 
-  title = 'side-chef';
-  currentPage: string;
-
-  changePage(page) {
-    this.currentPage = page;
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }

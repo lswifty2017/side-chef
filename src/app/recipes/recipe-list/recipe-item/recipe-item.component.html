@@ -1,7 +1,16 @@
-<a href="#" class="list-group-item d-flex justify-content-between  list-group-item-action" *ngIf="recipe" (click)="emitRecipe()">
-  <div class="col-9">
-      <h5 class="mb-1">{{ recipe.name }}</h5>
-      <p class="mb-1">{{ recipe.description }}</p>
+<a
+  href="#"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
   </div>
-  <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-responsive rounded float-right" style="max-height: 50px; max-width: 70px;">
+  <span class="pull-right">
+    <img
+      [src]="recipe.imagePath"
+      alt="{{ recipe.name }}"
+      class="img-responsive"
+      style="max-height: 50px;">
+  </span>
 </a>

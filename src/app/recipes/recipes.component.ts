@@ -8,7 +8,6 @@ import { Recipe } from './recipe.model';
 })
 export class RecipesComponent implements OnInit {
 
-  @Input() currentPage: string;
   selectedRecipe: Recipe;
 
   constructor() { }
@@ -16,8 +15,5 @@ export class RecipesComponent implements OnInit {
   ngOnInit() {
   }
 
-  showRecipeDetails(recipe) {
-    this.selectedRecipe = recipe;
-  }
 
 }
